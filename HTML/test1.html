@@ -1,0 +1,753 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<TITLE>快速体验 句酷批改网</TITLE>
+<META content="作文批改 英文写作 批改网" name="keywords">
+<META content="作文批改 英文写作 批改网" name="description">
+
+<link href="/res/css/index.css" rel="stylesheet" type="text/css" />
+<link href="/res/css/xml_style.css?d=2012-3-23" rel="stylesheet" type="text/css" />
+<link href="/res/css/reg2.css" rel="stylesheet" type="text/css" />
+
+<link href="/res/css/stu2012.css?d=2013-11-12" rel="stylesheet" type="text/css" />
+<link href="/res/2014/g2014.css?d=20160706" rel="stylesheet" type="text/css" />
+
+<!--
+<link href="/res/jquery-ui-start/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+-->
+<link href="/res/jquery-ui-start/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet">
+<style>
+.circles-text .circles-decimals,.circles-text{font-size:12px; vertical-align: baseline; }
+.circles-text .circles-integer {font-size:35px; }
+#scoreCircle{ position: absolute;top:10px; left:20px; }
+</style>
+
+</HEAD>
+<BODY >
+
+<div id="pg_header">
+	<div id="pg_headerw">
+		<div id="pg_logo"><a href="/" title="1秒钟改1篇作文"><img src="/res/2013/logo.png" style="border:0"></a></div>
+	</div>
+</div>
+
+
+<!-- 写作正文开始 -->
+    <div id="write3"  >
+        <div id="left">
+			<div class="gitem">
+				<div class="gtitle">作文内容</div>
+			</div>
+            <div><textarea id="pigai_txt" readonly>   English is a internationaly language which becomes importantly for modern world.
+
+    In China, English is took to be a foreigh language which many student choosed to learn. They begin to studying English at a early age. They use at least one hour to learn English knowledges a day. Even kids in kindergarten have begun learning simple words. That's a good phenomenan, for English is essential nowadays.
+
+    In addition to, some people think English is superior than Chinese. In me opinion, though English is for great significance, but English is after all a foreign language. it is hard for people to see eye to eye. English do help us read English original works, but Chinese helps us learn a true China. Only by characters Chinese literature can send off its brilliance. Learning a country's culture, especial its classic culture, the first thing is learn its language. Because of we are Chinese, why do we give up our mother tongue and learn our owne culture through a foreign language?</textarea>
+        </div>
+		<div class=" fl" id="bt_list" >
+		<span id="jk" class="title">清空</span>
+		<input type="checkbox" name="snt_no_pred" class="carv" id="snt_no_pred" > <label for="snt_no_pred">检查谓语动词</label>
+		<input type="checkbox" name="snt_mul_tense" class="carv" id="snt_mul_tense" > <label for="snt_mul_tense">检查语态一致</label>
+		<a href="javascript:;" id="open_auto">知识点定制</a>
+            <b>分制：</b>
+        <select id="score_system">
+            <option value="100">100分制</option>
+            <option value="25">25分制</option>
+        </select>
+		</div>
+
+		<div id="jkpg" class="fr"><a href="javascript:;" id="loading"><img src="/res/2014/bt.jpg?d=20151105" style="margin:4px 2px 0 0;border:0px; "alt=""/></a></div> <div class="cl"></div>
+
+        </div>
+        <div id="rightdefen" >
+		  <div class="gitem">
+				<div class="gtitle">分数评语</div>
+		  </div>
+
+          <div id="defen" style="position:relative">
+			<div style="padding-left: 20px;" id="stuScore" class="dfScore">
+				<b id="score"></b>
+			</div>
+			<div id="pigai_cat">
+				<div style="padding:40px;">点击“开始批改”按钮进行分析！</div>
+			</div>
+			<div id="scoreCircle"  ></div>
+		  </div>
+
+
+
+         </div>
+
+    </div>
+    <div id="ajdp">
+
+	 <div class="gitem" class="ttClose">
+				<div class="gtitle">按句点评</div>
+	  </div>
+        <div id="txt"><div style="padding:40px;">点击“开始批改”按钮进行分析！</div></div>
+
+    </div>
+<!-- end 写作正文开始 -->
+	<div id="pg_info">
+		<div style="padding-left:10px;font-size:12px;color:#999999">
+			提示：<div style="padding-left:0px;font-size:12px;">
+
+	1.快速体验不检测跑题，批改网作文打分公式可根据学校实际情况配置 <br>
+
+	2.中式英语指的是在英语母语用户很少使用的表达，如一些中国特色的表达“改革开放”等，不一定就是错的 <br>
+
+	3.批改网的评分原理是测量作文和语料库之间的距离，所以一些诸如莎士比亚的戏曲作品或者古英语小说，有可能得不了高分 <br>
+	4.测试作文只支持500单词，超过500单词请注册登录使用 </div>
+
+
+		</div>
+
+	</div>
+
+	<div id="pg_footer">
+		<div id="pg_footerw">
+			<div id="pg_info2">&copy;2016 PiGai 京ICP备13021860号
+			&nbsp;&nbsp;<a href="http://www.pigai.org/about/" target="_blank" style="font-size:12px;" onclick="javascript:return contact_us()"  >联系我们</a>
+			&nbsp;&nbsp;<a  href="http://www.pigai.org/about/help.html" target="_blank"  style="font-size:12px">快速入门</a>&nbsp;&nbsp;<a  href="/corpus/index.php" target="_blank"  style="font-size:12px">语料库词典 </a>
+			&nbsp;&nbsp;<a  href="http://www.pigai.org/zt/guest2016.php" target="_blank"  style="font-size:12px">快速体验</a>
+			&nbsp;&nbsp;<a  href="http://zt.pigai.org/zt/ksty/%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" target="_blank"  style="font-size:12px">演示版</a>
+			</div>
+
+			<div id="pg_addres">版权所有：北京词网科技有限公司<br>
+			地址：北京市海淀区北京邮电大学校产集团办公楼216室<br>
+			Email: pigai&#64;jukuu.com<br>
+			传真: 010-82600818
+			</div>
+			<div id="pg_dianhua"><img src="/res/2014/tel.jpg?d=2016-12-5"></div>
+			<div id="pg_weixin"><img src="/res/images/weixin.jpg?d=2016-12-5" ></div>
+		</div>
+	</div>
+
+
+<div id="dialog-confirm" title="知识点定制">
+
+    <style>
+        .list-inline {
+            padding-left: 0;
+            margin-left: -5px;
+            list-style: none;
+        }
+        .list-inline > li {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .pre-opt > li {
+            border-bottom: 1px dashed #eee;
+        }
+    </style>
+    <div style="margin: 5px 0 5px;">
+        <div style="border-bottom: 1px dashed #a3a3a3;margin-top: 10px;"></div>
+        <div style="text-align: center;border-bottom: 1px;margin-top: -12px;"><span style="padding-left: 5px;padding-right: 5px;background: #FCFDFD;">自定义规则</span></div>
+    </div>
+	<ul id="kpcontent">
+        <li class="kptitle">
+            <span style="width: 16%;">知识点</span>
+            <span style="width: 12%;">类别</span>
+            <span style="width: 54%;">评语</span>
+        </li>
+        <li class="m-li">
+        <input type="text" class="kp" placeholder="eg:learn（必填）" value="">
+        <input type="text" class="cate" placeholder="eg:亮点词汇" value="" readonly="readonly">
+        <input type="text" class="short_msg" placeholder="eg: 用的不错！（必填）" value="">
+        <!--input type="text" class="long_msg" placeholder="可以用长一点的句子描述（选填）" value=""-->
+        <span class="e-del" style="cursor: pointer; color: red;">×</span>
+        <span class="error" style="color: red;margin-left: 8px;font-size: 12px;"></span>
+        </li>
+	</ul>
+    <div style="margin: 15px 0 10px;">
+        <div style="border-bottom: 1px dashed #a3a3a3;margin-top: 10px;"></div>
+        <div style="text-align: center;border-bottom: 1px;margin-top: -12px;"><span style="padding-left: 5px;padding-right: 5px;background: #FCFDFD;">预定义规则</span></div>
+    </div>
+    <ul id="kpoptainal" class="pre-opt">
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">1</li>
+                <li class="kp">talented</li>
+                <li class="cate" content="i_word">亮点词汇</li>
+                <li class="short_msg">talented意为“有天分的，优秀的”，用的不错。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">2</li>
+                <li class="kp">_make a record</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">make a record意为“制唱片”，用的很好。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">3</li>
+                <li class="kp">_change the way</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">change the way指“改变方式，不拘泥于传统”，用的很好。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">4</li>
+                <li class="kp">_mix _n together</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">mix sth together指“把...混合在一起”，用的不错。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">5</li>
+                <li class="kp">_get together</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">get together指“聚集在一起”，用的很好</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">6</li>
+                <li class="kp">favourite</li>
+                <li class="cate" content="i_word">亮点词汇</li>
+                <li class="short_msg">favourite意为“最喜欢的”，用的不错。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">7</li>
+                <li class="kp">^ as we all know</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">as we all know意为“我们都知道...”，常用于句首，用的不错。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">8</li>
+                <li class="kp">_decide to _vb|_vbp</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">decide to指“决定做某事”，用的不错。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">9</li>
+                <li class="kp">_come up with</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg" title="come up with指“想出...”，一般用于想出主意，想出解决方法，用的很好。">come up with指“想出...”，一般用于想出主意，想出解决方法，用的很好。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">10</li>
+                <li class="kp">_give up</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">give up意为“放弃”，用的不错。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">11</li>
+                <li class="kp" title="not only _n|_jj |_, but also _n|_jj">not only _n|_jj ...</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg" title="not only...but also...指“不仅...而且...”，使用频率非常高的连接词，用的不错。">not only...but also...指“不仅...而且...”，使用频率非常高的连接词，用的不错。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">12</li>
+                <li class="kp">_try _sb 's best</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">try one's best指“尽某人最大努力...”，用的很好。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">13</li>
+                <li class="kp" title="_make _n come true">_make _n come ...</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">make...come true意为“让...成为现实”，用的很棒。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">14</li>
+                <li class="kp">^ There _be</li>
+                <li class="cate" content="i_ske">精彩句型</li>
+                <li class="short_msg">there be句型，表示“有...”，用的很好。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="list-inline f-ul">
+                <li class="num">15</li>
+                <li class="kp">at least</li>
+                <li class="cate" content="i_phrase">闪光短语</li>
+                <li class="short_msg">at least表示“无论如何，反正，至少”，此处用的不错。</li>
+                <li>
+                    <input class="f-check" type="checkbox" name="check[]" value="0">
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="m-popwin">
+        <div class="popwin-left">
+            <p>正面反馈</p>
+            <input value="亮点词汇" type="button" content="i_word">
+            <input value="闪光短语" type="button" content="i_phrase">
+            <input value="精彩句型" type="button" content="i_ske">
+            <input value="优秀表达" type="button" content="i_good">
+            <input value="加1分词" type="button" content="i_bonusa" score="1">
+            <input value="加2分词" type="button" content="i_bonusb" score="2">
+            <input value="加0.5分句型" type="button" content="i_bonusc" score="0.5">
+            <input value="关键词" type="button" content="i_key">
+            <input value="无提示" type="button" content="i_stop">
+            <!--p style="margin-top:40px;color:#BCBCBC">所有类别</p>
+            <input style="border:1px solid #BCBCBC" value="所有类别" type="button" content="dgx_nosearch"-->
+        </div>
+        <div class="popwin-right">
+            <p>负面反馈</p>
+            <input value="拼写错误" type="button" content="e_spell">
+            <input value="大小写错误" type="button" content="e_cap">
+            <input value="标点错误" type="button" content="e_punct">
+            <input value="动词错误" type="button" content="e_verb">
+            <input value="介词错误" type="button" content="e_prep">
+            <input value="名词错误" type="button" content="e_noun">
+            <input value="连词错误" type="button" content="e_conj">
+            <input value="代词错误" type="button" content="e_pron">
+            <input value="形容词错误" type="button" content="e_adj">
+            <input value="副词错误" type="button" content="e_adv">
+            <input value="冠词错误" type="button" content="e_art">
+            <input value="搭配错误" type="button" content="e_trp">
+            <input value="中式英语" type="button" content="e_chinglish">
+            <input value="时态错误" type="button" content="e_snt.tense">
+            <input value="其他错误" type="button" content="e_hyb">
+            <input value="减1分词" type="button" content="w_punish" score="-1">
+            <input value="减2分词" type="button" content="e_punish" score="-2">
+        </div>
+    </div>
+
+</div>
+<div id="kp_fw" style="display:none;">
+	<input type="text" class="kp" placeholder="eg:learn（必填）" value="">
+	<input type="text" class="cate" placeholder="eg:亮点词汇" value="" readonly="readonly">
+	<input type="text" class="short_msg" placeholder="eg: 用的不错！（必填）" value="">
+	<!--input type="text" class="long_msg" placeholder="可以用长一点的句子描述（选填）" value=""-->
+    <span class="e-del" style="cursor: pointer; color: red;">×</span>
+    <span class="error" style="color: red;margin-left: 8px;font-size: 12px;"></span>
+</div>
+
+</body>
+
+<script>
+var _self='index.php';
+
+</script>
+
+<script type="text/javascript" src="/res/javascript/jquery-1.10.1.min.js"></script>
+<!--
+<script type="text/javascript" src="/res/jquery-ui-start/jquery-ui-1.9.2.custom.min.js"></script>
+-->
+<script type="text/javascript" src="/res/jquery-ui-start/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="/res/javascript/float.0.1.nei.js?d=2010-11-7"></script>
+<script type="text/javascript" src="/res/javascript/common.js?d=2012-3-19"></script>
+<script type="text/javascript" src="/res/javascript/v2.js?d=2012-3-23"></script>
+<script type="text/javascript" src="/res/progressbar/jquery.progressbar.net.js"></script>
+<script type="text/javascript" src="/res/javascript/icomet.js"></script>
+<script type="text/javascript" src="/res/jpigai/jquery.pigai.js?d=20151223"></script>
+<script type="text/javascript" src="/res/javascript/circles.min.js"></script>
+<script type="text/javascript">
+ var _adid= 1000;
+ function pigai_callback( score ,str , dim_cat){
+     var scoreSystem = $('#score_system').val();
+     if(scoreSystem == 25){
+         score = score_format(score/4)
+     }
+	$('#score').text( score );
+	document.getElementById('txt').innerHTML= str;
+	document.getElementById('pigai_cat').innerHTML= dim_cat ;
+	//initHx();
+	initTips();
+	$('#loading').attr('disabled',false);
+	msg2("分析成功！");
+	F.hide();
+	if(scoreSystem == 25){
+         scoreCircles25();
+    }else{
+        scoreCircles();
+    }
+ }
+
+ // 成绩的标准格式
+ function score_format(score){
+     var intScore = parseInt(score);
+     var floatScore = score-intScore;
+     if(floatScore < 0.25){
+         floatScore = 0;
+     }else if(floatScore < 0.75){
+         floatScore = 0.5;
+     }else{
+         floatScore = 1;
+     }
+     var totalScore = intScore+floatScore;
+     return totalScore;
+ }
+
+ function scoreCircles( ){
+	 try{
+		 var sobj= $('#score');
+		 var myCircle = Circles.create({
+		  id:                  'scoreCircle',
+		  value:               parseFloat( sobj.text() ) ,
+		  maxValue:            100,
+		  radius:              42,
+		  width:               7,
+		  colors:              ['#BEE3F7', '#45AEEA']
+		});
+		$('#scoreCircle').show();
+		sobj.hide();
+	 }catch(e){
+		$('#scoreCircle').hide();
+		$('#score').show();
+	 }
+ }
+
+ function scoreCircles25( ){
+     try{
+         var sobj= $('#score');
+         var myCircle = Circles.create({
+             id:                  'scoreCircle',
+             value:               parseFloat( sobj.text() ) ,
+             maxValue:            25,
+             radius:              42,
+             width:               7,
+             colors:              ['#BEE3F7', '#45AEEA']
+         });
+         $('#scoreCircle').show();
+         sobj.hide();
+     }catch(e){
+         $('#scoreCircle').hide();
+         $('#score').show();
+     }
+ }
+
+ function jQstringify( obj ) {
+	var arr = [];
+	$.each( obj, function( key, val ) {
+	var next = '"'+key + '":';
+	next += $.isPlainObject( val ) ? jQstringify( val ) : '"'+val+'"';
+	arr.push( next );
+	});
+	return "{" + arr.join( "," ) + "}";
+};
+function getUrlParam(name){
+	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if (r!=null) return unescape(r[2]);
+	return null;
+}
+ $(function(){
+	var g_kp_data = '';
+	// 用于判断是否是从手写批改跳过来的
+     var type=  getUrlParam('type') ;
+     var startUrl = '/?c=api&a=pStart';
+     if( type=='sxpg' ){
+         startUrl = '/?c=api&a=pStart_sxpg';
+     }
+
+	$('#loading').click(function(){
+	   if($('#pigai_txt').val()==""){
+			alert('请在下方输入作文');
+			$('#pigai_txt').focus("");
+			pigai_callback("","","");
+			return false;
+		}
+		msg2("正在分析,请勿关闭...<div><span class=\"progressbar\" id=\"uploadprogressbar\" style=\"font-size:11px;\">0%</span></div>");
+		$('#loading').attr('disabled',true);
+
+		$('#txt').show();
+		var txt = $('#pigai_txt').val();
+		$.pigai({
+			txt:encodeURIComponent(txt) ,
+            kpu: g_kp_data,
+			callback:function (rep){
+				 pigai_callback(rep.score,rep.sentences, rep.score_cat);
+			} ,
+			processFun:function (n){
+				$( '#uploadprogressbar' ).progressBar( n );
+			}
+			,errorFun:function ( rep ){
+				alert('错误代码：'+rep.error+"\n\n错误描述:"+rep.error_des);
+			},
+			pigaiStart:startUrl,
+			pigaiEnd:'/?c=api&a=pEnd',
+			icometServer:'/icomet/'
+		 });
+
+	});
+
+    function getKp() {
+        var ret = [];
+        var flag = true;
+        $('#kpoptainal').find('.f-check:checked').each(function() {
+            var $p = $(this).parent().parent();
+            var $kp = $p.find('.kp'),
+                $cate = $p.find('.cate'),
+                $msg = $p.find('.short_msg');
+            ret.push({
+                kp: $kp.text(),
+                cate: $cate.attr('content'),
+                msg: $msg.text(),
+                lang: 'zh_cn'
+            });
+        })
+        $('#kpcontent').find('.m-li').each(function() {
+            var $kp = $(this).find('.kp'),
+                $cate = $(this).find('.cate'),
+                $msg = $(this).find('.short_msg'),
+                $score = $(this).find('.score');
+                $error = $(this).find('.error');
+            $error.html('');
+            if(!$kp.val()) {
+                $kp.focus();
+                flag = false;
+                $error.html('* 知识点必填');
+                return false;
+            }
+            if(!$cate.val()) {
+                $cate.focus();
+                flag = false;
+                $error.html('* 类别必填');
+                return false;
+            }
+            if(!$msg.val()) {
+                $msg.focus();
+                flag = false;
+                $error.html('* 评语必填');
+                return false;
+            }
+            var item = {
+                kp: $kp.val(),
+                cate: $cate.attr('content'),
+                msg: $msg.val(),
+                lang: 'zh_cn'
+            }
+            $cate.attr('score') && (item['score'] = parseFloat($cate.attr('score')));
+            ret.push(item);
+        });
+        if(flag){
+            try{
+                var str=JSON.stringify( ret );
+            }catch(e ){
+                var str = jQstringify(  ret );
+            }
+            return str;
+        }else {
+            return '';
+        }
+    }
+
+	function getKpData(){
+		//var str = '';
+		var obj = {};
+		$('#kpcontent li').each(function(i){
+			var ikp = $(this).find('.kp').val();
+			var ishort_msg = $(this).find('.short_msg').val();
+			var ilong_msg = $(this).find('.long_msg').val();
+			var icate = $(this).find('.cate').val();
+			var iif_ture = $(this).find('.if_ture').val();
+
+			if(ikp!='' &&  ishort_msg!='' ){
+				 //str +="{'"+ikp+"':{'"++"'}},";
+				 if( icate=='' ) icate='i_user';
+				 obj[ikp]={"cate": icate ,"rank":"2014","short_msg":ishort_msg,"long_msg":ilong_msg,"if_true":iif_ture};
+			}
+
+		});
+		try{
+		var str=JSON.stringify( obj );
+		}catch(e ){
+			var str = jQstringify(  obj );
+		}
+		return str ;
+	}
+	$('#jk').click(function(){
+		$('#pigai_txt').val("");
+		$('#pigai_txt').focus("");
+	});
+	//$('#loading').click();
+	$('#open_auto').click(function(){
+		$( "#dialog-confirm" ).dialog("open");
+	});
+
+	$( "#dialog-confirm" ).dialog({
+		resizable: false,
+		height:400,
+		width:950,
+		modal: true,
+		autoOpen:false,
+		buttons: {
+		"增加": function() {
+		  //$( this ).dialog( "close" );
+		  //alert('dddddd');
+		  //var obj= {'d':'good','arr':{'a':'abc','b':'ddd'}};
+		  //alert( JSON.stringify( obj )  );
+		  //return ;
+		  $('#kpcontent').append('<li class="m-li">'+ $('#kp_fw').html()+'</li>');
+		},
+		"保存并分析": function() {
+		  var data = getKp();
+		  g_kp_data = data;
+		  if(data) {
+              $( this ).dialog( "close" );
+              $('#loading').click();
+		  }else {
+          }
+		}
+
+		}
+	});
+
+	var str=  getUrlParam('essay') ;
+	if( str!=null ){
+		str = UrlDecode( str);
+		$('#pigai_txt').val(   str  );
+		$('#loading').click();
+	}
+
+    $('#kpcontent').on('click', '.e-del',function() {
+        $(this).parent().remove();
+        hidePop();
+    });
+
+ });
+
+function addClass(el, className) {
+    var reg = new RegExp('(\\s|^)'+className+'(\\s|$)');
+    el.className.match(reg) || (el.className += ' '+className);
+}
+function removeClass(el, className) {
+    var reg = new RegExp('(\\s|^)'+className+'(\\s|$)');
+    el.className.match(reg) && (el.className = el.className.replace(reg, ''));
+}
+function showPop(pos) {
+    //var el = document.getElementsByClassName('m-popwin')[0];
+    var el = document.querySelector('.m-popwin');
+    addClass(el, 'm-active');
+    el.style.left = (pos.left)+'px';
+    el.style.top = (pos.top+24)+'px';
+}
+function hidePop() {
+    //var el = document.getElementsByClassName('m-popwin')[0];
+    var el = document.querySelector('.m-popwin');
+    removeClass(el, 'm-active');
+}
+$(function () {
+    var input = '';
+    $('#kpcontent').on('focus', '.cate', function(event){
+        input = this;
+        var offset = {left: event.currentTarget.offsetLeft, top:event.currentTarget.offsetTop };
+        showPop(offset);
+    });
+    $('#kpcontent').on('focus', '.kp, .short_msg, .score', function() {
+        hidePop();
+    });
+    $('.m-popwin').on('click', 'input', function() {
+        var val = this.value;
+        var cate = this.getAttribute('content');
+        var score = parseFloat(this.getAttribute('score'));
+        input.value = val;
+        input.setAttribute('content', cate);
+        input.removeAttribute('score');
+        score && input.setAttribute('score', score);
+        input.blur();
+        hidePop();
+    });
+});
+
+ function UrlDecode(str){
+  var ret="";
+  for(var i=0;i<str.length;i++){
+   var chr = str.charAt(i);
+    if(chr == "+"){
+      ret+=" ";
+    }else if(chr=="%"){
+     var asc = str.substring(i+1,i+3);
+     if(parseInt("0x"+asc)>0x7f){
+      ret+=asc2str(parseInt("0x"+asc+str.substring(i+4,i+6)));
+      i+=5;
+     }else{
+      ret+=asc2str(parseInt("0x"+asc));
+      i+=2;
+     }
+    }else{
+      ret+= chr;
+    }
+  }
+  return ret;
+}
+
+function str2asc(strstr){
+	return ("0"+strstr.charCodeAt(0).toString(16)).slice(-2);
+}
+function asc2str(ascasc){
+	return String.fromCharCode(ascasc);
+}
+
+
+ /*
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3f46f9c09663bf0ac2abdeeb95c7e516";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+*/
+</script>
+</html>
